@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Screen  */
+  --breakpoint-xs: 0px;
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1440px;
+  --breakpoint-xl: 1920px;
+
+  /* exemplo cores:
+  --color-primary:   #1976d2;
+  --color-secondary: #26a69a; */
+}

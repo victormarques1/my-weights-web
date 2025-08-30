@@ -1,8 +1,8 @@
 // Configuration for your app
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file
 
-import { defineConfig } from '#q-app/wrappers';
-import { fileURLToPath } from 'node:url';
+import { defineConfig } from '#q-app/wrappers'
+import { fileURLToPath } from 'node:url'
 
 export default defineConfig((ctx) => {
   return {
@@ -15,19 +15,19 @@ export default defineConfig((ctx) => {
     boot: ['i18n', 'axios'],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#css
-    css: ['app.scss'],
+    css: ['app.scss', 'tailwind.css'],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
       // 'ionicons-v4',
-      // 'mdi-v7',
+      'mdi-v7',
       // 'fontawesome-v6',
       // 'eva-icons',
       // 'themify',
       // 'line-awesome',
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
 
-      'roboto-font', // optional, you are not bound to it
+      // 'roboto-font', // optional, you are not bound to it
       'material-icons', // optional, you are not bound to it
     ],
 
@@ -231,5 +231,5 @@ export default defineConfig((ctx) => {
        */
       extraScripts: [],
     },
-  };
-});
+  }
+})
