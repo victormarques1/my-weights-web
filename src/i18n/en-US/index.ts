@@ -1,7 +1,12 @@
-// This is just an example,
-// so you can safely delete all default props below
-
 export default {
-  failed: 'Action failed',
-  success: 'Action was successful',
-};
+  login: {
+    password: 'Password',
+    passwordPlaceholder: 'Type your password',
+    login: 'Log in',
+    signUp: 'Sign up',
+    notRegistered: 'Not registered yet?',
+    toggleVisibilityPassword: 'Toggle visibility password',
+    emailError: 'Email is required',
+    passwordError: 'Password is required',
+  },
+}

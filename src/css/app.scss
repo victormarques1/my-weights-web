@@ -1,8 +1,26 @@
 // app global css in SCSS form
-@import 'tailwindcss';
+@import 'tailwindcss' important;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 @import './custom.scss';
+
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-background: var(--background);
+  --color-text-light: var(--text-light);
+  --color-text-dark: var(--text-dark);
+
+  --color-dark: var(--dark);
+  --color-dark-page: var(--dark-page);
+
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --color-info: var(--info);
+  --color-warning: var(--warning);
+}
 
 *,
 *::before,
@@ -34,5 +52,5 @@ p {
 }
 
 .main-padding {
-  @apply p-4 md:p-6;
+  @apply p-4 md:p-6 min-h-screen;
 }
