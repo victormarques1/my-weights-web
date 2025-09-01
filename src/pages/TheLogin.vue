@@ -3,7 +3,7 @@
     <section>
       <q-img src="../assets/images/logo.png" class="w-72 mx-auto" alt="My Weights Logo" />
 
-      <q-form @submit="handleLogin" class="flex flex-col justify-center items-center mt-8">
+      <form @submit="handleLogin" class="flex flex-col justify-center items-center mt-8">
         <q-input
           name="email"
           class="w-full"
@@ -36,11 +36,8 @@
             <q-icon :name="mdiLock" />
           </template>
           <template v-slot:append>
-            <q-btn
-              :icon="hidePassword ? 'visibility' : 'visibility_off'"
-              flat
-              dense
-              round
+            <q-icon
+              :name="hidePassword ? 'visibility' : 'visibility_off'"
               :aria-label="$t('login.toggleVisibilityPassword')"
               @click="() => (hidePassword = !hidePassword)"
             />
@@ -62,16 +59,15 @@
             ><RouterLink to="/register">{{ $t('login.signUp') }}</RouterLink></span
           >
         </p>
-      </q-form>
+      </form>
     </section>
   </main>
 </template>
 
-<!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
 import { mdiEmail, mdiLock } from '@quasar/extras/mdi-v7'
-import type { LoginCredentials } from 'src/interfaces/Auth'
-import { login } from 'src/services/AuthService'
+import type { LoginCredentials } from 'src/interfaces/User'
+import { login } from 'src/services/UserService'
 import { triggerNegative } from 'src/utils/triggers'
 import { onBeforeMount, reactive, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
@@ -103,14 +99,17 @@ const handleLogin = async () => {
 
     const result = await login(user)
 
+    if (!result) {
+      return
+    }
+
     localStorage.setItem('auth_token', result.access_token)
     localStorage.setItem('user_data', JSON.stringify(result.user))
 
     await $router.push('/home')
-  } catch (error: any) {
-    const msg = error.response?.data?.message || 'Usuário ou senha inválidos.'
-    triggerNegative(msg)
-    console.log('Erro ao logar:', error)
+  } catch (error) {
+    triggerNegative($t('register.triggerError'))
+    console.error(error)
   } finally {
     loading.value = false
   }

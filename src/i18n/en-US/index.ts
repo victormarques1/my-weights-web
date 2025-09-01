@@ -9,4 +9,16 @@ export default {
     emailError: 'Email is required',
     passwordError: 'Password is required',
   },
+  register: {
+    name: 'Name',
+    namePlaceholder: 'Type your name',
+    nameError: 'Name is required',
+    hasAccount: 'Already have an account?',
+    passwordsDontMatch: "Passwords don't match",
+    repeatYourPassword: 'Repeat your password',
+    signUp: 'Sign up',
+    triggerError: 'Invalid data',
+    triggerSuccess: 'User registered successfully',
+    passwordLength: 'Password must have at least 6 characters',
+  },
 }
