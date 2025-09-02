@@ -37,6 +37,7 @@
           </template>
           <template v-slot:append>
             <q-icon
+              class="cursor-pointer"
               :name="hidePassword ? 'visibility' : 'visibility_off'"
               :aria-label="$t('login.toggleVisibilityPassword')"
               @click="() => (hidePassword = !hidePassword)"

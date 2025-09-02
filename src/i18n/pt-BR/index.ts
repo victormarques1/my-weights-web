@@ -21,4 +21,9 @@ export default {
     triggerSuccess: 'Usuário registrado com sucesso',
     passwordLength: 'Senha deve ter pelo menos 6 caracteres',
   },
+  language: {
+    portuguese: 'Português',
+    english: 'Inglês',
+    spanish: 'Espanhol',
+  },
 }

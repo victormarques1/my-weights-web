@@ -1,5 +1,5 @@
 <template>
-  <main class="main-padding flex flex-col justify-center items-center">
+  <main class="flex flex-col justify-center items-center">
     <section>
       <q-img src="../assets/images/logo.png" class="w-72 mx-auto" alt="My Weights Logo" />
 
@@ -55,6 +55,7 @@
           </template>
           <template v-slot:append>
             <q-icon
+              class="cursor-pointer"
               :name="hidePassword ? 'visibility' : 'visibility_off'"
               :aria-label="$t('login.toggleVisibilityPassword')"
               @click="() => (hidePassword = !hidePassword)"
@@ -81,6 +82,7 @@
           </template>
           <template v-slot:append>
             <q-icon
+              class="cursor-pointer"
               :name="hideConfirmPassword ? 'visibility' : 'visibility_off'"
               :aria-label="$t('login.toggleVisibilityPassword')"
               @click="() => (hideConfirmPassword = !hideConfirmPassword)"
