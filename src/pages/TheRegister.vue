@@ -1,6 +1,14 @@
 <template>
-  <main class="flex flex-col justify-center items-center">
-    <section>
+  <main class="flex h-screen">
+    <q-card class="absolute right-5 top-5 z-10 rounded-full bordered">
+      <q-card-section class="p-0 flex items-center justify-center">
+        <PublicHeader />
+      </q-card-section>
+    </q-card>
+
+    <section
+      class="flex flex-col flex-nowrap w-full mt-20 md:mt-0 md:w-1/2 p-4 justify-center items-center"
+    >
       <q-img src="../assets/images/logo.png" class="w-72 mx-auto" alt="My Weights Logo" />
 
       <h1 class="text-center text-xl font-semibold mb-5 mt-2">{{ $t('login.signUp') }}</h1>
@@ -107,12 +115,16 @@
         </p>
       </q-form>
     </section>
+
+    <AnimatedSection />
   </main>
 </template>
 
 <!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
 import { mdiAccount, mdiEmail, mdiLock } from '@quasar/extras/mdi-v7'
+import AnimatedSection from 'src/components/Global/AnimatedSection.vue'
+import PublicHeader from 'src/components/Global/PublicHeader.vue'
 import { register } from 'src/services/UserService'
 import { triggerNegative, triggerSuccess } from 'src/utils/triggers'
 import { reactive, ref } from 'vue'

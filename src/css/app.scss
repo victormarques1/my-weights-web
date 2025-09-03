@@ -30,6 +30,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(241.63deg, #eeeeee 31.25%, #f9f9f9 100.7%);
+}
+
 h1,
 h2,
 h3,
@@ -52,5 +56,5 @@ p {
 }
 
 .main-padding {
-  @apply p-4 md:p-6 min-h-screen;
+  @apply px-4 md:px-6;
 }

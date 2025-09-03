@@ -1,14 +1,17 @@
 import type { RouteRecordRaw } from 'vue-router'
-import PublicRoutes from './PublicRoutes'
 
 const routes: RouteRecordRaw[] = [
-  // {
-  //   path: '/',
-  //   component: () => import('layouts/MainLayout.vue'),
-  //   children: [{ path: '', name: 'Login', component: () => import('pages/TheLogin.vue') }],
-  // },
+  {
+    path: '/',
+    name: 'Login',
+    component: () => import('pages/TheLogin.vue'),
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: () => import('pages/TheRegister.vue'),
+  },
 
-  PublicRoutes,
   // Always leave this as last one,
   // but you can also remove it
   {

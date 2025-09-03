@@ -16,7 +16,7 @@
           fit="cover"
         />
       </div>
-      <q-menu>
+      <q-menu class="rounded-xl shadow-xl">
         <q-list style="min-width: 100px">
           <q-item
             v-for="language in languages"
