@@ -26,4 +26,7 @@ export default {
     english: 'English',
     spanish: 'Spanish',
   },
+  home: {
+    start: 'Start',
+  },
 }

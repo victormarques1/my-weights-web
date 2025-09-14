@@ -26,4 +26,7 @@ export default {
     english: 'Inglés',
     spanish: 'Español',
   },
+  home: {
+    start: 'Iniciar',
+  },
 }
