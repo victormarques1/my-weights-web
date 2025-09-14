@@ -28,5 +28,6 @@ export default {
   },
   home: {
     start: 'Start',
+    emptyWorkouts: "You don't have any workout registered.",
   },
 }

@@ -28,5 +28,6 @@ export default {
   },
   home: {
     start: 'Iniciar',
+    emptyWorkouts: 'No tienes ninguna ficha de entrenamiento registrada.',
   },
 }
