@@ -75,8 +75,8 @@
 
 <script setup lang="ts">
 import { mdiEmail, mdiLock } from '@quasar/extras/mdi-v7'
-import AnimatedSection from 'src/components/Global/AnimatedSection.vue'
-import PublicHeader from 'src/components/Global/PublicHeader.vue'
+import AnimatedSection from 'src/components/Public/AnimatedSection.vue'
+import PublicHeader from 'src/components/Public/PublicHeader.vue'
 import type { LoginCredentials } from 'src/interfaces/User'
 import { login } from 'src/services/UserService'
 import { triggerNegative } from 'src/utils/triggers'

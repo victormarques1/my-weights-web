@@ -6,8 +6,8 @@
 </template>
 
 <script setup lang="ts">
-import SelectLanguage from './SelectLanguage.vue'
-import SelectTheme from './SelectTheme.vue'
+import SelectLanguage from '../Global/SelectLanguage.vue'
+import SelectTheme from '../Global/SelectTheme.vue'
 
 defineOptions({
   name: 'PublicHeader',

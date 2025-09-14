@@ -123,7 +123,7 @@
 <!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
 import { mdiAccount, mdiEmail, mdiLock } from '@quasar/extras/mdi-v7'
-import AnimatedSection from 'src/components/Global/AnimatedSection.vue'
+import AnimatedSection from 'src/components/Public/AnimatedSection.vue'
 import PublicHeader from 'src/components/Global/PublicHeader.vue'
 import { register } from 'src/services/UserService'
 import { triggerNegative, triggerSuccess } from 'src/utils/triggers'
