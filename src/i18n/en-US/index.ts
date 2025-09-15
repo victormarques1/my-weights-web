@@ -29,5 +29,22 @@ export default {
   home: {
     start: 'Start',
     emptyWorkouts: "You don't have any workout registered.",
+    createNewWorkout: 'Create new workout',
+    createExercise: 'Create exercise',
+    exerciseExample: 'Ex: Chest Press',
+    create: 'Create',
+    category: 'Category',
+    fillAllFields: 'Fill all fields',
+    exerciseSuccessMessage: 'Exercise created successfully!',
+  },
+  categories: {
+    Abs: 'Abs',
+    Back: 'Back',
+    Chest: 'Chest',
+    Shoulders: 'Shoulders',
+    Biceps: 'Biceps',
+    Triceps: 'Triceps',
+    Legs: 'Legs',
+    Cardio: 'Cardio',
   },
 }

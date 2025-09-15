@@ -29,5 +29,22 @@ export default {
   home: {
     start: 'Iniciar',
     emptyWorkouts: 'Você não possui nenhuma ficha de treino cadastrada.',
+    createNewWorkout: 'Criar nova ficha',
+    createExercise: 'Criar exercício',
+    exerciseExample: 'Ex: Supino Reto',
+    create: 'Criar',
+    category: 'Categoria',
+    fillAllFields: 'Preencha todos os campos',
+    exerciseSuccessMessage: 'Exercício criado com sucesso!',
+  },
+  categories: {
+    Abs: 'Abdômen',
+    Back: 'Costas',
+    Chest: 'Peito',
+    Shoulders: 'Ombros',
+    Biceps: 'Bíceps',
+    Triceps: 'Tríceps',
+    Legs: 'Pernas',
+    Cardio: 'Cardio',
   },
 }
